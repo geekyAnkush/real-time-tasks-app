@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -25,5 +26,8 @@
   },
   "devDependencies": {
     "jshint": "^2.12.0"
+  },
+  "engines": {
+    "node": "v18.3.0"
   }
 }

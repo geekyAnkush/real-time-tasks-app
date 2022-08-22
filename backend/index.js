@@ -18,10 +18,15 @@ winston.add(new winston.transports.File({ filename: "logfile.log" }));
 
 require("dotenv").config();
 
+var corsOptions = {
+  origin: "http://localhost:3000",
+  optionsSuccessStatus: 200, // For legacy browser support
+};
+
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.use("/api/todos", todos);
 app.use("/api/auth", authRoutes);
