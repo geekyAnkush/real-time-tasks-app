@@ -19,7 +19,7 @@ winston.add(new winston.transports.File({ filename: "logfile.log" }));
 require("dotenv").config();
 
 var corsOptions = {
-  origin: "http://localhost:3000",
+  origin: "https://localhost:3000",
   optionsSuccessStatus: 200, // For legacy browser support
 };
 

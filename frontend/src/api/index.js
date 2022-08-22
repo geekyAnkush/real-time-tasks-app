@@ -1,5 +1,4 @@
-export const url = "https://ak--todo.herokuapp.com/api";
-// export const url = " http://localhost:5000/api";
+export const url = " http://localhost:5000/api";
 
 export const setHeaders = () => {
   const headers = {
